@@ -5,7 +5,7 @@ public class UISlot : MonoBehaviour, IDropHandler
 {
     [SerializeField] private bool replaceIfOccupied = true;
 
-    private SlotItemView current;
+    internal SlotItemView current; // unity inspectorda gözükmesin
 
     public bool IsOccupied => current != null;
 

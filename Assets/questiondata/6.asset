@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd93d6fe136d014b8e6cf4d1ee6814e, type: 3}
   m_Name: 6
   m_EditorClassIdentifier: 
-  questionText: 
-  answerOptions: []
-  correctAnswerIndex: 0
+  questionText: "Ki\u015Fisel bilgilerimizi (T.C. kimlik no, ev adresi, telefon)
+    sosyal medyada herkesle payla\u015Fabiliriz."
+  answerOptions:
+  - "Do\u011Fru"
+  - "Yanl\u0131\u015F"
+  correctAnswerIndex: 1

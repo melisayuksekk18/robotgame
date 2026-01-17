@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd93d6fe136d014b8e6cf4d1ee6814e, type: 3}
   m_Name: 2
   m_EditorClassIdentifier: 
-  questionText: 
-  answerOptions: []
+  questionText: "\u0130nternette tan\u0131mad\u0131\u011F\u0131m\u0131z ki\u015Filerden
+    gelen e-posta eklerini ve dosyalar\u0131 a\xE7mamal\u0131y\u0131z."
+  answerOptions:
+  - "Do\u011Fru"
+  - "Yanl\u0131\u015F"
   correctAnswerIndex: 0

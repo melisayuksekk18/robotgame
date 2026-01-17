@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd93d6fe136d014b8e6cf4d1ee6814e, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
-  questionText: 
-  answerOptions: []
+  questionText: "G\xFC\xE7l\xFC bir \u015Fifre; harf, rakam ve \xF6zel karakter (\xF6rne\u011Fin:
+    ?, !, *) i\xE7ermelidir."
+  answerOptions:
+  - "Do\u011Fru"
+  - "Yanl\u0131\u015F"
   correctAnswerIndex: 0

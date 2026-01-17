@@ -6,11 +6,10 @@ public class controller : MonoBehaviour
 {
     public enum State
     {
+        none,
         ileri,
         sag,
         sol,
-        atla,
-        collect,
     }
 
     public State[] states;
@@ -18,18 +17,19 @@ public class controller : MonoBehaviour
     public questionpanel questionpanel;
     public questiondata[] questiondata;
     private int currentQuestionIndex = 0;
+    public UISlotPanel uiSlotPanel;
 
 
-
-    void Start()
+    public void Startmove()
     {
         StartCoroutine(ProcessStates()); // durumları işleme coroutine başlatma
     }
 
     IEnumerator ProcessStates()
     {
+        
 
-        foreach (State state in states) // her durumu sırayla işleme
+        foreach (UISlot slot in uiSlotPanel.slots) // her durumu sırayla işleme
         {
             GameObject questionObject = kyle.checkquestions(); // soru kontrolü yap
             if (questionObject != null) // eğer sorular tamamlanmadıysa bekle
@@ -46,8 +46,9 @@ public class controller : MonoBehaviour
             currentQuestionIndex++; // sonraki soruya geç
             Destroy(questionObject); // soruyu sahneden kaldır
             }
+            if (slot.current == null || slot.current.Value == State.none) continue; // eğer slot boşsa atla
 
-            switch (state)
+            switch (slot.current.Value)
             {
                 case State.ileri:
                     kyle.Forward();
@@ -57,12 +58,6 @@ public class controller : MonoBehaviour
                     break;
                 case State.sol:
                     kyle.RotateLeft();
-                    break;
-                case State.atla:
-                    kyle.Jump();
-                    break;
-                case State.collect:
-                    kyle.Collect();
                     break;
             }
             // Her eylem arasında kısa bir bekleme süresi

@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd93d6fe136d014b8e6cf4d1ee6814e, type: 3}
   m_Name: 7
   m_EditorClassIdentifier: 
-  questionText: 
-  answerOptions: []
+  questionText: "Bilgisayar\u0131m\u0131za vir\xFCs bula\u015Fmamas\u0131 i\xE7in
+    sadece g\xFCvenilir ve resmi sitelerden indirme yapmal\u0131y\u0131z."
+  answerOptions:
+  - "Do\u011Fru"
+  - "Yanl\u0131\u015F"
   correctAnswerIndex: 0

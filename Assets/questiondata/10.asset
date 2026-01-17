@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd93d6fe136d014b8e6cf4d1ee6814e, type: 3}
   m_Name: 10
   m_EditorClassIdentifier: 
-  questionText: 
-  answerOptions: []
-  correctAnswerIndex: 0
+  questionText: "Bir ba\u015Fkas\u0131n\u0131n \u015Fifresini izinsiz kullanmak dijital
+    bir su\xE7 de\u011Fildir."
+  answerOptions:
+  - "Do\u011Fru"
+  - "Yanl\u0131\u015F"
+  correctAnswerIndex: 1

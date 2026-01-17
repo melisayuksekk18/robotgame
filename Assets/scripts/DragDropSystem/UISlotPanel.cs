@@ -3,7 +3,7 @@ using UnityEngine;
 public class UISlotPanel : MonoBehaviour
 {
     [Header("Slots")]
-    [SerializeField] private UISlot[] slots;
+    public UISlot[] slots;
 
     [Header("Spawn")]
     [SerializeField] private SlotItemView slotItemPrefab;

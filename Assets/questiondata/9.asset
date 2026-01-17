@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd93d6fe136d014b8e6cf4d1ee6814e, type: 3}
   m_Name: 9
   m_EditorClassIdentifier: 
-  questionText: 
-  answerOptions: []
+  questionText: "Dijital ayak izi; internette yapt\u0131\u011F\u0131m\u0131z her
+    i\u015Flemin arkada b\u0131rakt\u0131\u011F\u0131 bir izdir ve silinmesi zordur."
+  answerOptions:
+  - "Do\u011Fru"
+  - "Yanl\u0131\u015F"
   correctAnswerIndex: 0

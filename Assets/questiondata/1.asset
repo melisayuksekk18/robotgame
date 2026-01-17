@@ -15,6 +15,6 @@ MonoBehaviour:
   questionText: "\"123456\" gibi s\u0131ral\u0131 say\u0131lar, tahmin edilmesi zor
     ve g\xFC\xE7l\xFC bir \u015Fifredir."
   answerOptions:
-  - Evet
-  - "Hay\u0131r"
+  - "Do\u011Fru"
+  - "Yanl\u0131\u015F"
   correctAnswerIndex: 1

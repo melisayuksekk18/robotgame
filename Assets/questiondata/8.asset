@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd93d6fe136d014b8e6cf4d1ee6814e, type: 3}
   m_Name: 8
   m_EditorClassIdentifier: 
-  questionText: 
-  answerOptions: []
-  correctAnswerIndex: 0
+  questionText: "Sosyal medyada kar\u015F\u0131la\u015Ft\u0131\u011F\u0131m\u0131z
+    her haber ve bilgi kesinlikle do\u011Frudur."
+  answerOptions:
+  - "Do\u011Fru"
+  - "Yanl\u0131\u015F"
+  correctAnswerIndex: 1

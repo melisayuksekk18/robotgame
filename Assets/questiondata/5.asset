@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd93d6fe136d014b8e6cf4d1ee6814e, type: 3}
   m_Name: 5
   m_EditorClassIdentifier: 
-  questionText: 
-  answerOptions: []
+  questionText: "\u0130nternette etik kurallar\u0131na uymak, ger\xE7ek hayattaki
+    g\xF6rg\xFC kurallar\u0131na uymak kadar \xF6nemlidir."
+  answerOptions:
+  - "Do\u011Fru"
+  - "Yanl\u0131\u015F"
   correctAnswerIndex: 0
