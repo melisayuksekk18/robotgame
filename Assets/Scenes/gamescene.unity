@@ -879,6 +879,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 843212688}
     m_Modifications:
+    - target: {fileID: 362123047959145361, guid: 2213365609edf48328e73aca6b7b71ac,
+        type: 3}
+      propertyPath: enumValue
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 422700577797871485, guid: 2213365609edf48328e73aca6b7b71ac,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1464,6 +1469,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4237366779177550873, guid: 2213365609edf48328e73aca6b7b71ac,
+        type: 3}
+      propertyPath: enumValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4598388867051593077, guid: 2213365609edf48328e73aca6b7b71ac,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1589,6 +1599,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400440538343965947, guid: 2213365609edf48328e73aca6b7b71ac,
+        type: 3}
+      propertyPath: enumValue
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6662160737617361463, guid: 2213365609edf48328e73aca6b7b71ac,
         type: 3}

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: library
   m_EditorClassIdentifier: 
   entries:
-  - key: 0
-    icon: {fileID: 21300000, guid: 7098a09df2ed04d428ca8d7102c0fb54, type: 3}
   - key: 1
-    icon: {fileID: 21300000, guid: ed9ae9b39a9a5405897f0bfef00aa210, type: 3}
+    icon: {fileID: 21300000, guid: 7098a09df2ed04d428ca8d7102c0fb54, type: 3}
   - key: 2
+    icon: {fileID: 21300000, guid: ed9ae9b39a9a5405897f0bfef00aa210, type: 3}
+  - key: 3
     icon: {fileID: 21300000, guid: 306568165e8fd42f298eb38763c630a8, type: 3}
