@@ -715,6 +715,8 @@ MonoBehaviour:
   states: 01000000000000000200000000000000000000000000000000000000
   kyle: {fileID: 2011955120}
   questionpanel: {fileID: 1790147847}
+  questiondata:
+  - {fileID: 11400000, guid: 9fea9e3335af76f47a5ed27b737ec8e5, type: 2}
 --- !u!4 &1252468526
 Transform:
   m_ObjectHideFlags: 0
@@ -1128,6 +1130,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAnswered: 0
   isTrueAnswer: 0
+  questionText: {fileID: 0}
+  answerTexts: []
 --- !u!114 &1790147848
 MonoBehaviour:
   m_ObjectHideFlags: 0

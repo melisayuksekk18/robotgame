@@ -16,6 +16,9 @@ public class controller : MonoBehaviour
     public State[] states;
     public kyle kyle;
     public questionpanel questionpanel;
+    public questiondata[] questiondata;
+    private int currentQuestionIndex = 0;
+
 
 
     void Start()
@@ -28,10 +31,22 @@ public class controller : MonoBehaviour
 
         foreach (State state in states) // her durumu sırayla işleme
         {
-            if (kyle.checkquestions()) // eğer sorular tamamlanmadıysa bekle
+            GameObject questionObject = kyle.checkquestions(); // soru kontrolü yap
+            if (questionObject != null) // eğer sorular tamamlanmadıysa bekle
             {
-                yield return StartCoroutine(questionpanel.ShowQuestionPanel()); // işi biten kadar bekle
+                
+                yield return StartCoroutine(questionpanel.ShowQuestionPanel(questiondata[currentQuestionIndex])); // işi biten kadar bekle
+             if (questionpanel.isTrueAnswer == false )
+            {
+                kyle.animator.SetTrigger("fall"); // yanlış cevap verildiyse fail animasyonunu oynat
+                yield break; // yanlış cevap verildiyse işlemi durdur
+                
             }
+
+            currentQuestionIndex++; // sonraki soruya geç
+            Destroy(questionObject); // soruyu sahneden kaldır
+            }
+
             switch (state)
             {
                 case State.ileri:

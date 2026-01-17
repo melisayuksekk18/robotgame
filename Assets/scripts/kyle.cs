@@ -86,18 +86,18 @@ public class kyle : MonoBehaviour
         }
     }
 
-    public bool checkquestions () // soru kontrolü için
+    public GameObject checkquestions () // soru kontrolü için
     {
-        bool isQuestioned = false;
+        GameObject question = null;
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, 1f);
         foreach (var hitCollider in hitColliders)
         {
             if (hitCollider.CompareTag("question"))
             {
-                isQuestioned = true;
+                question = hitCollider.gameObject;
             }
         }
-        return isQuestioned;
+        return question;
     }
 
 }
