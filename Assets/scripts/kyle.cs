@@ -22,7 +22,7 @@ public class kyle : MonoBehaviour
     {
         float t = 0;
         Vector3 startPos = transform.position;
-        Vector3 endPos = startPos + transform.forward * 2.5f; // 5 birim ileri
+        Vector3 endPos = startPos + transform.forward * 2;
         while (t < 1f)
         {
             t += Time.deltaTime;
