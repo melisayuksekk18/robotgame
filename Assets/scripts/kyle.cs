@@ -1,12 +1,12 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class kyle : MonoBehaviour
 {
+    public LayerMask wallLayer;
     public Animator animator;
-    
+    public controller controller;
+
     public void Jump()
     {
         animator.SetTrigger("jump");
@@ -15,7 +15,8 @@ public class kyle : MonoBehaviour
     public void Forward()
     {
         animator.SetBool("run", true);
-        StartCoroutine(Forwarding()); // coroutine başlatma
+
+        if (!CheckFront()) StartCoroutine(Forwarding()); // coroutine başlatma
     }
 
     IEnumerator Forwarding() // fonksiyonun içimdeki bekletmeler için
@@ -63,7 +64,7 @@ public class kyle : MonoBehaviour
         }
     }
 
-    public void check () // bitiş kontrolü için
+    public void check() // bitiş kontrolü için
     {
         bool isFinished = false;
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, 1f);
@@ -76,17 +77,31 @@ public class kyle : MonoBehaviour
         }
         if (isFinished)
         {
-            Debug.Log("Level Completed!");
             animator.SetTrigger("celebrate");
+
+            controller.Finish();
         }
         else
         {
-            Debug.Log("Level Failed. Try Again!");
-            animator.SetTrigger("fail");
+            animator.SetTrigger("fall");
+
+            controller.Fail();
         }
     }
 
-    public GameObject checkquestions () // soru kontrolü için
+    public bool CheckFront()
+    {
+        if (Physics.Raycast(transform.position + Vector3.up * 0.5f, transform.forward, 2.5f, wallLayer))
+        {
+            animator.SetTrigger("fall");
+            controller.Fail();
+            return true;
+        }
+
+        return false;
+    }
+
+    public GameObject checkquestions() // soru kontrolü için
     {
         GameObject question = null;
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, 1f);
